@@ -16,7 +16,6 @@ module.exports = function(){
             this.body = _html;
 
         };
-        console.log(this.render);
         yield next;
     }
 

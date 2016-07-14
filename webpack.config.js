@@ -38,7 +38,7 @@ module.exports = {
         alias: {
             components: path.join(__dirname, './src/js/components')
         }
-    },
+    }
     // 开启source-map，webpack有多种source-map，在官网文档可以查到
-    devtool: '#source-map'
+    //devtool: '#source-map'
 };

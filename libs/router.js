@@ -22,6 +22,10 @@ module.exports = function(app){
         yield runController.bind(this)('index');
     })
 
+    router.get('/demo',function*(next){
+        yield runController.bind(this)('demo');
+    })
+
     return function*(next){
         yield next;
     }

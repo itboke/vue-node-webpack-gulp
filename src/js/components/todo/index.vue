@@ -7,7 +7,7 @@
 
 <template>
         <div>
-            <h1>{{name}}</h1>
+            <h1>{{name}}88888888888888</h1>
             <list>
         </div>
 </template>
@@ -18,7 +18,7 @@
         el:'#app',
         data(){
             return {
-                name:"hello,world,!!!!!"
+                name:"hello,vue..."
             }
         },
         components:{list}
