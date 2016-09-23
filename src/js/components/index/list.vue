@@ -1,9 +1,6 @@
 <!--
     渲染一个列表
 -->
-<style lang="less">
-
-</style>
 <template>
     <div id="example-list">
         <ul>

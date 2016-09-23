@@ -1,7 +1,7 @@
 
 <template>
         <div>
-            <h1>{{name}}88888888888888999444</h1>
+            <h1>{{name}}444ssssss</h1>
             <list>
         </div>
 </template>
@@ -12,7 +12,7 @@
         el:'#app',
         data(){
             return {
-                name:"hello,vue.xxxxxxxxx.7777gsg"
+                name:"hello,vue.xxxxxxxxx.7777gsg."
             }
         },
         components:{list}
