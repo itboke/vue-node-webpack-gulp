@@ -1,8 +1,11 @@
 
 <template>
         <div>
-            <h1>{{name}}444ssssss</h1>
-            <list>
+            <a href="#" class="logo"></a>
+            <h1>{{name}}444ssssss777</h1>
+            <a href="#" class="bg-img"></a>
+            <list></list>
+            <img src="../../../images/360.png"/>
         </div>
 </template>
 
@@ -15,6 +18,8 @@
                 name:"hello,vue.xxxxxxxxx.7777gsg."
             }
         },
-        components:{list}
+        components:{
+            list
+        }
     }
 </script>

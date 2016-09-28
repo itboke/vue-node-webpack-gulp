@@ -1,9 +1,7 @@
 
 
 module.exports = {
-
     staticPath:'./src/',
-    outPutPath:'./dist/'
-
-
+    buildName:'dist',
+    htmlSrc:'/src/html/'
 };

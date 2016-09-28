@@ -1,6 +1,21 @@
+@color:red;
+@imageDirPath:'../../../images/';
 body{
     background: #ccc;
 }
+.logo{
+    display: block;
+    width: 130px;
+    height: 43px;
+    background:url("@{imageDirPath}360.png") no-repeat;
+}
+.bg-img{
+    display: block;
+    width: 350px;
+    height: 500px;
+    background:url("@{imageDirPath}www.jpg") no-repeat;
+    background-size: contain;
+}
 #example-list{
-    color:red;
+    color:@color;
 }
