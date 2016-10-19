@@ -1,16 +1,17 @@
 
 <template>
         <div>
-            <a href="#" class="logo"></a>
-            <h1>{{name}}444ssssss777</h1>
-            <a href="#" class="bg-img"></a>
+            <topbanner></topbanner>
+            <navigation></navigation>
             <list></list>
             <img src="../../../images/360.png"/>
         </div>
 </template>
 
 <script>
+    import topbanner from './topBanner';
     import list from './list';
+    import navigation from './hello';
     export default{
         el:'#app',
         data(){
@@ -19,7 +20,9 @@
             }
         },
         components:{
-            list
+            topbanner,
+            list,
+            navigation
         }
     }
 </script>

@@ -1,5 +1,121 @@
+/* --------------------------------------------------------------
+  RESET
+-------------------------------------------------------------- */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
 body {
-  background: #ccc;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+:focus {
+  outline: none;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+  -moz-box-shadow: none;
+}
+/*
+ * common.less
+*/
+body {
+  font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  color: #595959;
+}
+body {
+  padding-top: 40px;
+}
+.top-banner {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  z-index: 9999;
+}
+.top-banner a {
+  margin: 0 auto;
+  display: block;
+  width: 960px;
+  height: 40px;
+}
+header .fixed-width {
+  width: 955px;
+  margin: 0 auto;
+}
+header .logo {
+  height: 78px;
+  padding-top: 24px;
 }
 .logo {
   display: block;

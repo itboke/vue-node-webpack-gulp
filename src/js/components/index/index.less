@@ -1,8 +1,41 @@
+
+
+@import '../common/reset.less';
+@import '../common/common.less';
+
+
+
 @color:red;
 @imageDirPath:'../../../images/';
 body{
-    background: #ccc;
+    padding-top: 40px;
 }
+.top-banner{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    z-index: 9999;
+    a{
+        margin: 0 auto;
+        display: block;
+        width: 960px;
+        height: 40px;
+    }
+}
+
+header{
+    .fixed-width{
+        width: 955px;
+        margin:0 auto;
+    }
+    .logo{
+        height: 78px;
+        padding-top: 24px;
+    }
+}
+
 .logo{
     display: block;
     width: 130px;

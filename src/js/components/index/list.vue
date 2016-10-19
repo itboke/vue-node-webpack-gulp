@@ -17,7 +17,7 @@
                 items:[
                     {mes:'hello'},
                     {mes:'Vue'},
-                    {mes:'learning'}
+                    {mes:'learssssssssssning'}
                 ]
             }
         }
