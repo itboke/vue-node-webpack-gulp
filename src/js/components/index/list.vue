@@ -12,7 +12,6 @@
     export default{
         el:'#example-list',
         data(){
-
             return {
                 items:[
                     {mes:'hello'},

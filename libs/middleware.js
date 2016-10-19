@@ -3,15 +3,28 @@ const path = require('path');
 const ejs = require('ejs');
 const fs = require('fs');
 
-module.exports = function(){
+const Tools = require('./tools');
 
-    return function*(next){
+module.exports = function() {
 
-        this.render = function(filename,data){
+    return function*(next) {
 
-            var filePath = path.resolve(__dirname,'../dist/'+filename+'.html');
 
-            var _html = ejs.render(fs.readFileSync(filePath).toString(),data);
+        //挂载全局
+        this._data = {
+            init_css: function(cssList) {
+                return Tools.init_css(cssList);
+            },
+            init_js: function(jsList) {
+                return Tools.init_js(jsList);
+            }
+        };
+
+        this.render = function(filename, data) {
+
+            var filePath = path.resolve(__dirname, '../dist/' + filename + '.html');
+
+            var _html = ejs.render(fs.readFileSync(filePath).toString(), this._data);
 
             this.body = _html;
 

@@ -72,12 +72,7 @@
 /***/ },
 /* 4 */,
 /* 5 */,
-/* 6 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,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"
-
-/***/ },
+/* 6 */,
 /* 7 */,
 /* 8 */,
 /* 9 */
@@ -121,28 +116,40 @@
 
 	var _topBanner2 = _interopRequireDefault(_topBanner);
 
-	var _list = __webpack_require__(15);
+	var _list = __webpack_require__(13);
 
 	var _list2 = _interopRequireDefault(_list);
 
-	var _hello = __webpack_require__(19);
+	var _navigation = __webpack_require__(16);
 
-	var _hello2 = _interopRequireDefault(_hello);
+	var _navigation2 = _interopRequireDefault(_navigation);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = {
 	    el: '#app',
+	    ready: function ready() {
+	        var _self = this;
+	        $.ajax({
+	            type: 'GET',
+	            url: 'http://localhost:8008/api/88',
+	            dataType: 'json',
+	            success: function success(result) {
+	                _self.data = result['nav'];
+	            },
+	            error: function error(xhr, type) {
+	                console.log(xhr);
+	            }
+	        });
+	    },
 	    data: function data() {
-	        return {
-	            name: "hello,vue.xxxxxxxxx.7777gsg."
-	        };
+	        return { 'data': '' };
 	    },
 
 	    components: {
 	        topbanner: _topBanner2.default,
 	        list: _list2.default,
-	        hello: _hello2.default
+	        navigation: _navigation2.default
 	    }
 	};
 	// </script>
@@ -150,9 +157,9 @@
 	// <template>
 	//         <div>
 	//             <topbanner></topbanner>
-	//             <hello></hello>
+	//             <navigation v-bind:data="data"></navigation>
 	//             <list></list>
-	//             <img src="../../../images/360.png"/>
+	//             <div>{{data.nav}}</div>
 	//         </div>
 	// </template>
 	//
@@ -188,18 +195,16 @@
 	module.exports = "\n\n\n\n<div id=\"top_banner\" class=\"top-banner\">\n    <a href=\"/\">\n        <img src=\"http://wegraphics.net/wp-content/themes/wegraphics3/images/top-banner.jpg\" alt=\"\" />\n    </a>\n</div>\n";
 
 /***/ },
-/* 13 */,
-/* 14 */,
-/* 15 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(16)
+	__vue_script__ = __webpack_require__(14)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\list.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(17)
+	__vue_template__ = __webpack_require__(15)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -218,7 +223,7 @@
 	})()}
 
 /***/ },
-/* 16 */
+/* 14 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -240,7 +245,6 @@
 	exports.default = {
 	    el: '#example-list',
 	    data: function data() {
-
 	        return {
 	            items: [{ mes: 'hello' }, { mes: 'Vue' }, { mes: 'learssssssssssning' }]
 	        };
@@ -249,23 +253,22 @@
 	// </script>
 
 /***/ },
-/* 17 */
+/* 15 */
 /***/ function(module, exports) {
 
 	module.exports = "\n\n\n\n<div id=\"example-list\">\n    <ul>\n        <li v-for=\"item in items\">{{item.mes}}</li>\n    </ul>\n</div>\n";
 
 /***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = "\n\n<div>\n    <topbanner></topbanner>\n    <hello></hello>\n    <list></list>\n    <img src=\"" + __webpack_require__(6) + "\"/>\n</div>\n";
-
-/***/ },
-/* 19 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_template__ = __webpack_require__(20)
+	__vue_script__ = __webpack_require__(20)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\js\\components\\index\\navigation.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(17)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -275,7 +278,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-20c688cd/hello.vue"
+	  var id = "_v-a170bbae/navigation.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -284,10 +287,49 @@
 	})()}
 
 /***/ },
+/* 17 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div>\n    <header>\n        <div class=\"fixed-width\">\n            <div class=\"logo\"></div>\n            <div class=\"nav\">\n                <ul>\n                    <li v-for=\"item in data\"><a href=\"#\">{{item}}</a></li>\n                </ul>\n            </div>\n        </div>\n    </header>\n</div>\n";
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	module.exports = "\n\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n</div>\n";
+
+/***/ },
+/* 19 */,
 /* 20 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div>\n    dddddddddddddddddddd\n</div>\n";
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	// <template>
+	//     <div>
+	//         <header>
+	//             <div class="fixed-width">
+	//                 <div class="logo"></div>
+	//                 <div class="nav">
+	//                     <ul>
+	//                         <li v-for="item in data"><a href="#">{{item}}</a></li>
+	//                     </ul>
+	//                 </div>
+	//             </div>
+	//         </header>
+	//     </div>
+	// </template>
+	//
+	// <script>
+	//定义子组件的props 作用域
+	exports.default = {
+	    props: ['data']
+	};
+
+	// </script>
 
 /***/ }
 /******/ ]);
