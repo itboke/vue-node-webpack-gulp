@@ -99,6 +99,21 @@
             width: 560px;
             height: 250px;
             border: 1px solid #ccc;
+            ul{
+                height: 100%;
+                padding: 10px;
+                overflow-y: auto;
+            }
+            li{
+                line-height: 1.5;
+            }
+            .me{
+                color:#008060;
+            }
+            .other{
+                text-align: right;
+                color:#4EA9E9;
+            }
         }
         .chat-input{
             textarea{
@@ -110,6 +125,15 @@
                 text-indent: 12px;
                 border-radius: 4px;
             }
+        }
+    }
+    .chat-btn{
+        text-align: right;
+        strong{
+            display: block;
+            margin-top: 20px;
+            margin-right: 20px;
+            cursor: pointer;
         }
     }
 }

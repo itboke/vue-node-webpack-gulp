@@ -1,5 +1,6 @@
 <script>
 
+    import './test.vue';
     new Vue({
         el: '#tabs',
         data:{
@@ -34,7 +35,12 @@
                                     </div>\
                                 </div> \
                                 <div class="chat-body"> \
-                                    <div class="chat-news"></div> \
+                                    <div class="chat-news"> \
+                                        <ul> \
+                                            <li class="me"><div>梧桐&nbsp;&nbsp;14:44</div><div>你好</div></li>\
+                                            <li class="other"><div>小小猫&nbsp;&nbsp;14:44</div><div>你好</div></li>\
+                                        </ul> \
+                                    </div> \
                                     <div class="chat-input"> \
                                         <textarea></textarea> \
                                     </div> \
@@ -45,6 +51,23 @@
                     //shade: false,
                     className:'window-chat'
                 });
+                this.connect();
+            },
+            connect:function(){
+                var ws = io.connect('http://localhost:8880/');
+                var _userId = $('#menu').attr('data-id');
+                ws.on('connect',function(){
+                    //当连接的时候把个人的用户唯一标示发送给服务器
+                    ws.emit('join',_userId);
+                })
+                //发送消息
+                var sendMsg = function(){
+                    var _msg = 'hello';
+                    ws.emit('s_getMsg',_msg,_userId,002);
+                }
+                //打开某个好友的对话框的时候建立链接
+                ws.emit('s_firend',_userId,002);
+                //sendMsg();
             }
         }
     })

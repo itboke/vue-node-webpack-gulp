@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <%-init_css('demo.css')%>
+    <script src="//cdn.bootcss.com/socket.io/1.5.0/socket.io.min.js"></script>
 </head>
 <body>
     <h1 id="app">
-        <div class="menu" id="meun">
+        <div class="menu" id="menu" data-id="<%=userId%>">
             <!-- 头部信息 -->
             <div class="header">
                 <div class="inner">
@@ -56,6 +57,6 @@
             </div>
         </div>
     </h1>
-    <%-init_js('vue.min.js,demo.js')%>
+    <%-init_js('zepto.js,vue.min.js,demo.js')%>
 </body>
 </html>

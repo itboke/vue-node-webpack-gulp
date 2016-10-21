@@ -1628,7 +1628,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(81)
+	__vue_script__ = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!babel-loader!./../../../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./demo.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
@@ -1649,64 +1649,6 @@
 	    hotAPI.update(id, module.exports, __vue_template__)
 	  }
 	})()}
-
-/***/ },
-/* 81 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	// <script>
-
-	new Vue({
-	    el: '#tabs',
-	    data: {
-	        isShow: 0, //显示
-	        isHide: 0, //隐藏
-	        text: 'firend'
-	    },
-	    methods: {
-	        userShow: function userShow(arg) {
-	            if (this.isShow == arg) {
-	                this.isShow = 0;
-	            } else {
-	                this.isShow = arg;
-	            }
-	        },
-	        //切换选项卡
-	        tabSwitch: function tabSwitch(text) {
-	            this.text = text;
-	        },
-	        //弹出聊天窗口
-	        pop: function pop() {
-	            jsLib.plugin.layer.open({
-	                content: '<div> \
-	                            <div class="chat-head"> \
-	                                <div class="inner"> \
-	                                    <div class="avator"> \
-	                                        <img src="http://img.gming.org/img/tongyi/gm_xxk_dzj.jpg"/> \
-	                                    </div>\
-	                                    <div class="avator"> \
-	                                        <p>小小猫</p><p>我是一只美丽的小笨猫</p> \
-	                                    </div>\
-	                                </div>\
-	                            </div> \
-	                            <div class="chat-body"> \
-	                                <div class="chat-news"></div> \
-	                                <div class="chat-input"> \
-	                                    <textarea></textarea> \
-	                                </div> \
-	                                <div class="chat-btn"><strong>发送</strong></div>\
-	                            </div> \
-	                         </div>',
-	                time: 3600,
-	                //shade: false,
-	                className: 'window-chat'
-	            });
-	        }
-	    }
-	});
-	// </script>
 
 /***/ }
 /******/ ]);

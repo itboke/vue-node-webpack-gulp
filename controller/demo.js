@@ -1,6 +1,8 @@
 module.exports = function*(next){
 
-
-    this.render('demo',{});
+    var _id = this._data.Q.id;
+    this.render('demo',{
+        userId:_id
+    });
 
 };

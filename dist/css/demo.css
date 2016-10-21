@@ -185,6 +185,21 @@ body {
   height: 250px;
   border: 1px solid #ccc;
 }
+.window-chat .chat-body .chat-news ul {
+  height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+}
+.window-chat .chat-body .chat-news li {
+  line-height: 1.5;
+}
+.window-chat .chat-body .chat-news .me {
+  color: #008060;
+}
+.window-chat .chat-body .chat-news .other {
+  text-align: right;
+  color: #4EA9E9;
+}
 .window-chat .chat-body .chat-input textarea {
   display: block;
   margin: auto;
@@ -193,6 +208,15 @@ body {
   line-height: 1.5;
   text-indent: 12px;
   border-radius: 4px;
+}
+.window-chat .chat-btn {
+  text-align: right;
+}
+.window-chat .chat-btn strong {
+  display: block;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
 }
 /* layer弹层移动版样式 */
 .layermbox {
