@@ -1,14 +1,17 @@
 
+
 <template>
         <div>
             <topbanner></topbanner>
             <navigation v-bind:data="data"></navigation>
             <list></list>
             <div>{{data.nav}}</div>
+            <img src={{pic}} />
         </div>
 </template>
 
 <script>
+    var imgs = require('../../../images/www.jpg');
     import topbanner from './topBanner';
     import list from './list';
     import navigation from './navigation';
@@ -29,7 +32,7 @@
             })
         },
         data(){
-            return {'data':''};
+            return {'data':'','pic':imgs};
         },
         components:{
             topbanner,

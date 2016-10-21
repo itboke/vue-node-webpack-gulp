@@ -58,8 +58,12 @@
 	 * @ 主页面js include components/__name__.vue
 	*/
 
+	//引入less
+
 
 	new Vue(_index2.default);
+
+	//页面组件
 
 /***/ },
 /* 1 */,
@@ -84,7 +88,7 @@
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\index.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(18)
+	__vue_template__ = __webpack_require__(20)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -126,6 +130,20 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	//
+	//
+	// <template>
+	//         <div>
+	//             <topbanner></topbanner>
+	//             <navigation v-bind:data="data"></navigation>
+	//             <list></list>
+	//             <div>{{data.nav}}</div>
+	//             <img src={{pic}} />
+	//         </div>
+	// </template>
+	//
+	// <script>
+	var imgs = __webpack_require__(19);
 	exports.default = {
 	    el: '#app',
 	    ready: function ready() {
@@ -143,7 +161,7 @@
 	        });
 	    },
 	    data: function data() {
-	        return { 'data': '' };
+	        return { 'data': '', 'pic': imgs };
 	    },
 
 	    components: {
@@ -153,17 +171,6 @@
 	    }
 	};
 	// </script>
-	//
-	// <template>
-	//         <div>
-	//             <topbanner></topbanner>
-	//             <navigation v-bind:data="data"></navigation>
-	//             <list></list>
-	//             <div>{{data.nav}}</div>
-	//         </div>
-	// </template>
-	//
-	// <script>
 
 /***/ },
 /* 11 */
@@ -263,12 +270,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(20)
+	__vue_script__ = __webpack_require__(17)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\navigation.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(17)
+	__vue_template__ = __webpack_require__(18)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -288,19 +295,6 @@
 
 /***/ },
 /* 17 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div>\n    <header>\n        <div class=\"fixed-width\">\n            <div class=\"logo\"></div>\n            <div class=\"nav\">\n                <ul>\n                    <li v-for=\"item in data\"><a href=\"#\">{{item}}</a></li>\n                </ul>\n            </div>\n        </div>\n    </header>\n</div>\n";
-
-/***/ },
-/* 18 */
-/***/ function(module, exports) {
-
-	module.exports = "\n\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n</div>\n";
-
-/***/ },
-/* 19 */,
-/* 20 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -330,6 +324,24 @@
 	};
 
 	// </script>
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div>\n    <header>\n        <div class=\"fixed-width\">\n            <div class=\"logo\"></div>\n            <div class=\"nav\">\n                <ul>\n                    <li v-for=\"item in data\"><a href=\"#\">{{item}}</a></li>\n                </ul>\n            </div>\n        </div>\n    </header>\n</div>\n";
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "/dist/img/www.375e67c5.jpg";
+
+/***/ },
+/* 20 */
+/***/ function(module, exports) {
+
+	module.exports = "\n\n\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src={{pic}} />\n</div>\n";
 
 /***/ }
 /******/ ]);

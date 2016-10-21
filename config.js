@@ -3,5 +3,6 @@
 module.exports = {
     staticPath:'./src/',
     buildName:'dist',
-    htmlSrc:'/src/html/'
+    htmlSrc:'./src/html/',
+    htmlBuildSrc:'./dist/'
 };

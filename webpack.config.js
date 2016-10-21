@@ -8,7 +8,6 @@ module.exports = (file)=>{
         var extractLESS = new ExtractTextPlugin('../css/'+ _name +'.css');
         _entry[_name] = './src/js/' + file;
         opt.entry = _entry;
-        //console.log(path.resolve(__dirname, 'dist/js'));
         opt.output = {
             path: path.resolve(__dirname, './dist'),
             filename: '[name].js',

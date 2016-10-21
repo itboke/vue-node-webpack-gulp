@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <%-init_css('common.css,index.css')%>
+    @@include("./_common/head.html")
+    <%-init_css('index.css')%>
 </head>
 <body>
     <h1 id="app"></h1>
-    <%-init_js('vue.min.js,index.js')%>
+    <%-init_js('zepto.js,vue.min.js,index.js')%>
 </body>
 </html>

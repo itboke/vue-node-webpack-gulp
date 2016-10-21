@@ -1,0 +1,115 @@
+@import '../common/reset.less';
+@import '../common/common.less';
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.menu{
+    position: fixed;
+    right:0;
+    bottom:0;
+    width: 300px;
+    height: 500px;
+    border:1px solid #ccc;
+    .header{
+        padding: 10px 20px;
+        color:#fff;
+        background: #31A66B;
+        .avator{
+            display: inline-block;
+            vertical-align: middle;
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+            }
+        }
+    }
+    .tabs{
+        .top{
+            border-bottom: 1px solid #ccc;
+            li{
+                float: left;
+                padding: 10px 5px;
+                width: 89px;
+                text-align: center;
+                cursor: pointer;
+                border-right: 1px solid #999;
+                &:last-child{
+                    border-right:none;
+                }
+            }
+        }
+        .list{
+            strong{
+                display: block;
+                margin-top: 10px;
+                margin-left: 5px;
+                cursor: pointer;
+                &:hover{
+                    color:#31A66B;
+                    background: #ccc;
+                }
+            }
+            li{
+                padding: 5px;
+                text-indent: 20px;
+                cursor: pointer;
+                border-bottom: 1px solid #ededed;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+.window-chat{
+    max-width: 700px !important;
+    width: 600px;
+    height: 450px;
+    .chat-head{
+        .inner{
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ededed;
+        }
+        .avator{
+            display: inline-block;
+            vertical-align: middle;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+            }
+            p{
+                line-height: 1.5;
+            }
+        }
+    }
+    .chat-body{
+        .chat-news{
+            margin: auto;
+            margin-bottom: 10px;
+            width: 560px;
+            height: 250px;
+            border: 1px solid #ccc;
+        }
+        .chat-input{
+            textarea{
+                display: block;
+                margin: auto;
+                width: 560px;
+                height: 70px;
+                line-height: 1.5;
+                text-indent: 12px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
