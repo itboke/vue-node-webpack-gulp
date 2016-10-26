@@ -3,7 +3,6 @@
 var Tools= {};
 Tools.init_css = function(cssList){
     var _cssArr,_cssPath,_cssLinks='';
-
     _cssArr = cssList.split(',');
     _cssPath = Tools.getStaticPath('css');
     _cssArr.forEach(function(key) {
@@ -13,7 +12,6 @@ Tools.init_css = function(cssList){
 };
 Tools.init_js = function(jsList){
     var _jsArr,_jsPath,_jsLinks='';
-
     _jsArr = jsList.split(',');
     _jsPath = Tools.getStaticPath('js');
     _jsArr.forEach(function(key) {
@@ -24,10 +22,10 @@ Tools.init_js = function(jsList){
 Tools.getStaticPath = function(type){
     switch(type){
         case 'css':
-            return 'localhost:3000/dist/css';
+            return 'localhost:3000/debug/css';
             break;
         case 'js':
-            return 'localhost:3000/dist/js';
+            return 'localhost:3000/debug/js';
             break;
     }
 }

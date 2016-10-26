@@ -47,7 +47,7 @@ module.exports = function() {
         this.render = function(filename, data) {
 
             this._data = extend(this._data,data);
-            var filePath = path.resolve(__dirname, '../dist/' + filename + '.html');
+            var filePath = path.resolve(__dirname, '../debug/' + filename + '.html');
             var _html = ejs.render(fs.readFileSync(filePath).toString(), this._data);
             this.body = _html;
         };

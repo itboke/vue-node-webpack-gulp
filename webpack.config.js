@@ -5,13 +5,12 @@ module.exports = (file)=>{
     var _name,_entry={},opt = {};
     if(file){
         var _name = file.replace('.js','');
-        var extractLESS = new ExtractTextPlugin('../css/'+ _name +'.css');
+        var extractLESS = new ExtractTextPlugin('css/'+ _name +'.css');
         _entry[_name] = './src/js/' + file;
         opt.entry = _entry;
         opt.output = {
-            path: path.resolve(__dirname, './dist'),
-            filename: '[name].js',
-            publicPath: ''
+            filename: 'js/[name].js',
+            publicPath: '/debug/'
         };
     }
     opt.watch  = true;
@@ -24,7 +23,7 @@ module.exports = (file)=>{
                 test: /\.less$/,
                 loader: ExtractTextPlugin.extract('style','css!autoprefixer!less')
             },
-            { test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192&name=/dist/img/[name].[hash:8].[ext]'},
+            { test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192&name=img/[folder]/[name].[ext]'},
             { test: /\.(html|tpl)$/, loader: 'html-loader'},
         ]
     };

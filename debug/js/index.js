@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "//localhost:3000";
+/******/ 	__webpack_require__.p = "/debug/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -88,7 +88,7 @@
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\index.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(20)
+	__vue_template__ = __webpack_require__(21)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -138,13 +138,14 @@
 	//             <navigation v-bind:data="data"></navigation>
 	//             <list></list>
 	//             <div>{{data.nav}}</div>
-	//             <img src='../../../images/www.jpg'/>
+	//             <img src={{pic}} />
+	//             <img src={{pic2}} />
 	//         </div>
 	// </template>
 	//
 	// <script>
 	var imgs = __webpack_require__(19);
-	//console.log(imgs);
+	var imgs2 = __webpack_require__(20);
 	exports.default = {
 	    el: '#app',
 	    ready: function ready() {
@@ -157,12 +158,12 @@
 	                _self.data = result['nav'];
 	            },
 	            error: function error(xhr, type) {
-	                console.log(xhr);
+	                //console.log(xhr);
 	            }
 	        });
 	    },
 	    data: function data() {
-	        return { 'data': '', 'pic': imgs };
+	        return { 'data': '', 'pic': imgs, 'pic2': imgs2 };
 	    },
 
 	    components: {
@@ -336,13 +337,19 @@
 /* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "/debug/img/www.375e67c5.jpg";
+	module.exports = __webpack_require__.p + "img/index/www.jpg";
 
 /***/ },
 /* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "\n\n\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src='" + __webpack_require__(19) + "'/>\n</div>\n";
+	module.exports = __webpack_require__.p + "img/common/4444.jpg";
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	module.exports = "\n\n\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src={{pic}} />\n    <img src={{pic2}} />\n</div>\n";
 
 /***/ }
 /******/ ]);

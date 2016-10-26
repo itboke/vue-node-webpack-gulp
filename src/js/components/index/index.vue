@@ -7,11 +7,13 @@
             <list></list>
             <div>{{data.nav}}</div>
             <img src={{pic}} />
+            <img src={{pic2}} />
         </div>
 </template>
 
 <script>
-    var imgs = require('../../../images/www.jpg');
+    var imgs = require('../../../images/index/www.jpg');
+    var imgs2 = require('../../../images/common/4444.jpg');
     import topbanner from './topBanner';
     import list from './list';
     import navigation from './navigation';
@@ -27,12 +29,12 @@
                     _self.data = result['nav'];
                 },
                 error:function(xhr,type){
-                    console.log(xhr);
+                    //console.log(xhr);
                 }
             })
         },
         data(){
-            return {'data':'','pic':imgs};
+            return {'data':'','pic':imgs,'pic2':imgs2};
         },
         components:{
             topbanner,

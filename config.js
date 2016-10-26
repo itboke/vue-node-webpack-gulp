@@ -1,8 +1,12 @@
-
-
+/*
+ * 
+ * 
+*/
 module.exports = {
-    staticPath:'./src/',
-    buildName:'dist',
-    htmlSrc:'./src/html/',
-    htmlBuildSrc:'./dist/'
+    path:{
+    	staticPath:'./src/',
+	    htmlSrc:'./src/html/',
+	    distSrc:'./dist/',
+	    debugDir:'./debug/'
+    }
 };

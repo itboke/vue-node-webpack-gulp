@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <%-init_css('demo.css')%>
+    <script src="//cdn.bootcss.com/socket.io/1.5.0/socket.io.min.js"></script>
+</head>
+<body>
+    <h1 id="app">
+        <div class="menu" id="menu" data-id="<%=userId%>">
+            <!-- 头部信息 -->
+            <div class="header">
+                <div class="inner">
+                    <div class="avator"><img src="http://www.gming.org/nf/templets/nft/tu/zxgf_gsyps.jpg"/></div>
+                    <div class="avator">
+                        <p>观世音菩萨</p>
+                        <p>东方日出西边雨!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 群组信息 -->
+            <div class="tabs" id="tabs">
+                <ul class="top clearfix">
+                    <li v-on:click="tabSwitch('firend')">好友</li>
+                    <li v-on:click="tabSwitch('groups')">群组</li>
+                    <li v-on:click="tabSwitch('news')">未看消息</li>
+                </ul>
+                <div v-bind:class="{ 'list': true, 'hide':text != 'firend' }">
+                    <div class="user">
+                        <div class="group">
+                            <strong v-on:click="userShow(1)">前端嫖妓组</strong><!-- 绑定点击事件 -->
+                            <ul v-bind:class="{'show':isShow == 1,'hide':isHide == 0 }">
+                                <li v-on:click="pop"><img src="http://img.gming.org/img/tongyi/gm_xxk_jgj.jpg"/><span>小狼狼</span></li>
+                                <li><img src="http://www.gming.org/uploads/131211/10-131211155539A9.jpg"/><span>小艺艺</span></li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <strong v-on:click="userShow(2)">后端嫖妓组</strong>
+                            <ul v-bind:class="{ 'show':isShow == 2,'hide':isHide == 0 }">
+                                <li><img src="http://img.gming.org/img/tongyi/gm_xxk_jgj.jpg"/><span>小涛涛</span></li>
+                                <li><img src="http://www.gming.org/uploads/131211/10-131211155539A9.jpg"/><span>小疯疯</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div v-bind:class="{ 'list': true, 'hide':text != 'groups' }">
+                    <div class="groups">
+                        好多群啊!^.^
+                    </div>
+                </div>
+                <div v-bind:class="{ 'list': true, 'hide':text != 'news' }">
+                    <div class="news">
+                        好多没有看的消息啊!^.^
+                    </div>
+                </div>
+            </div>
+        </div>
+    </h1>
+    <%-init_js('zepto.js,vue.min.js,demo.js')%>
+</body>
+</html>
