@@ -130,8 +130,6 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	//
-	//
 	// <template>
 	//         <div>
 	//             <topbanner></topbanner>
@@ -142,7 +140,6 @@
 	//             <img src={{pic2}} />
 	//         </div>
 	// </template>
-	//
 	// <script>
 	var imgs = __webpack_require__(19);
 	var imgs2 = __webpack_require__(20);
@@ -349,7 +346,7 @@
 /* 21 */
 /***/ function(module, exports) {
 
-	module.exports = "\n\n\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src={{pic}} />\n    <img src={{pic2}} />\n</div>\n";
+	module.exports = "\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src={{pic}} />\n    <img src={{pic2}} />\n</div>\n";
 
 /***/ }
 /******/ ]);

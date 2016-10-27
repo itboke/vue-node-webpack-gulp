@@ -1,5 +1,3 @@
-
-
 <template>
         <div>
             <topbanner></topbanner>
@@ -10,7 +8,6 @@
             <img src={{pic2}} />
         </div>
 </template>
-
 <script>
     var imgs = require('../../../images/index/www.jpg');
     var imgs2 = require('../../../images/common/4444.jpg');

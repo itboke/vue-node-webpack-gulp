@@ -34,21 +34,30 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "//localhost:3000";
+/******/ 	__webpack_require__.p = "/dist/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(85);
+
+
+/***/ },
+
+/***/ 85:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(3);
+	__webpack_require__(86);
 
-	var _index = __webpack_require__(9);
+	var _index = __webpack_require__(90);
 
 	var _index2 = _interopRequireDefault(_index);
 
@@ -66,29 +75,24 @@
 	//页面组件
 
 /***/ },
-/* 1 */,
-/* 2 */,
-/* 3 */
+
+/***/ 86:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
+
+/***/ 90:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(10)
+	__vue_script__ = __webpack_require__(91)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\index.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(20)
+	__vue_template__ = __webpack_require__(102)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -107,7 +111,8 @@
 	})()}
 
 /***/ },
-/* 10 */
+
+/***/ 91:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -116,35 +121,33 @@
 	    value: true
 	});
 
-	var _topBanner = __webpack_require__(11);
+	var _topBanner = __webpack_require__(92);
 
 	var _topBanner2 = _interopRequireDefault(_topBanner);
 
-	var _list = __webpack_require__(13);
+	var _list = __webpack_require__(94);
 
 	var _list2 = _interopRequireDefault(_list);
 
-	var _navigation = __webpack_require__(16);
+	var _navigation = __webpack_require__(97);
 
 	var _navigation2 = _interopRequireDefault(_navigation);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	//
-	//
 	// <template>
 	//         <div>
 	//             <topbanner></topbanner>
 	//             <navigation v-bind:data="data"></navigation>
 	//             <list></list>
 	//             <div>{{data.nav}}</div>
-	//             <img src='../../../images/www.jpg'/>
+	//             <img src={{pic}} />
+	//             <img src={{pic2}} />
 	//         </div>
 	// </template>
-	//
 	// <script>
-	var imgs = __webpack_require__(19);
-	//console.log(imgs);
+	var imgs = __webpack_require__(100);
+	var imgs2 = __webpack_require__(101);
 	exports.default = {
 	    el: '#app',
 	    ready: function ready() {
@@ -157,12 +160,12 @@
 	                _self.data = result['nav'];
 	            },
 	            error: function error(xhr, type) {
-	                console.log(xhr);
+	                //console.log(xhr);
 	            }
 	        });
 	    },
 	    data: function data() {
-	        return { 'data': '', 'pic': imgs };
+	        return { 'data': '', 'pic': imgs, 'pic2': imgs2 };
 	    },
 
 	    components: {
@@ -174,11 +177,12 @@
 	// </script>
 
 /***/ },
-/* 11 */
+
+/***/ 92:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_template__ = __webpack_require__(12)
+	__vue_template__ = __webpack_require__(93)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -197,22 +201,24 @@
 	})()}
 
 /***/ },
-/* 12 */
+
+/***/ 93:
 /***/ function(module, exports) {
 
 	module.exports = "\n\n\n\n<div id=\"top_banner\" class=\"top-banner\">\n    <a href=\"/\">\n        <img src=\"http://wegraphics.net/wp-content/themes/wegraphics3/images/top-banner.jpg\" alt=\"\" />\n    </a>\n</div>\n";
 
 /***/ },
-/* 13 */
+
+/***/ 94:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(14)
+	__vue_script__ = __webpack_require__(95)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\list.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(15)
+	__vue_template__ = __webpack_require__(96)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -231,7 +237,8 @@
 	})()}
 
 /***/ },
-/* 14 */
+
+/***/ 95:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -261,22 +268,24 @@
 	// </script>
 
 /***/ },
-/* 15 */
+
+/***/ 96:
 /***/ function(module, exports) {
 
 	module.exports = "\n\n\n\n<div id=\"example-list\">\n    <ul>\n        <li v-for=\"item in items\">{{item.mes}}</li>\n    </ul>\n</div>\n";
 
 /***/ },
-/* 16 */
+
+/***/ 97:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(17)
+	__vue_script__ = __webpack_require__(98)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\navigation.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(18)
+	__vue_template__ = __webpack_require__(99)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -295,7 +304,8 @@
 	})()}
 
 /***/ },
-/* 17 */
+
+/***/ 98:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -327,22 +337,33 @@
 	// </script>
 
 /***/ },
-/* 18 */
+
+/***/ 99:
 /***/ function(module, exports) {
 
 	module.exports = "\n<div>\n    <header>\n        <div class=\"fixed-width\">\n            <div class=\"logo\"></div>\n            <div class=\"nav\">\n                <ul>\n                    <li v-for=\"item in data\"><a href=\"#\">{{item}}</a></li>\n                </ul>\n            </div>\n        </div>\n    </header>\n</div>\n";
 
 /***/ },
-/* 19 */
+
+/***/ 100:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "/debug/img/www.375e67c5.jpg";
+	module.exports = __webpack_require__.p + "img/index/www375e67.jpg";
 
 /***/ },
-/* 20 */
+
+/***/ 101:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "\n\n\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src='" + __webpack_require__(19) + "'/>\n</div>\n";
+	module.exports = __webpack_require__.p + "img/common/4444375e67.jpg";
+
+/***/ },
+
+/***/ 102:
+/***/ function(module, exports) {
+
+	module.exports = "\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src={{pic}} />\n    <img src={{pic2}} />\n</div>\n";
 
 /***/ }
-/******/ ]);
+
+/******/ });
