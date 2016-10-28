@@ -2,6 +2,8 @@
  * @ 主页面js include components/__name__.vue
 */
 
+import '../html/foxue/foxue.html';
+
 //引入less
 import './components/demo/demo.less';
 

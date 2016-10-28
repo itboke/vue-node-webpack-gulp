@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var extractLESS = new ExtractTextPlugin('css/[name].[chunkhash:6].css');
 
@@ -7,7 +8,6 @@ var mapPluginInstance = new MapPlugin({
     filename:'map.json',
     path: path.resolve(__dirname,'./dist/map')
 });
-
 module.exports = {
 
     output:{
@@ -24,7 +24,7 @@ module.exports = {
                 loader: ExtractTextPlugin.extract('style','css!autoprefixer!less')
             },
             { test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192&name=img/[folder]/[name][hash:6].[ext]'},
-            { test: /\.(html|tpl)$/, loader: 'html-loader'},
+            { test: /\.(html|tpl)$/, loader: 'fuck-loader'},
         ]
     },
     babel: {
@@ -41,8 +41,11 @@ module.exports = {
     },
     plugins:[
         extractLESS,
-        mapPluginInstance
+        mapPluginInstance,
+        new webpack.DefinePlugin({
+            'process.env':{
+              'NODE_ENV': JSON.stringify('production')
+            }
+        })
     ]
-    // 开启source-map，webpack有多种source-map，在官网文档可以查到
-    //devtool: '#source-map'
 };

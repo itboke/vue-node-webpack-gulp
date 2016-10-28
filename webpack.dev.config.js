@@ -45,7 +45,5 @@ module.exports = (file)=>{
         }
     };
     opt.plugins = [extractLESS];
-    // 开启source-map，webpack有多种source-map，在官网文档可以查到
-    //devtool: '#source-map'
     return opt;
 };

@@ -15,8 +15,8 @@ const webpackProConfig = require('./webpack.pro.config');
 var jsWatchList = new Set();
 var _jsDevOutPath  = config.path.debugDir;
 var _jsProOutPath = config.path.distDir;
-//var cssReg = /<%-init_css\(\'(\S+)\'\)%>/;
-//var jsReg  = /<%-init_js\(\'(\S+)\'\)%>/;
+
+
 const _htmlSrcPath = config.path.htmlSrc;
 const _htmlFile = [
     _htmlSrcPath+'*.html',
@@ -26,9 +26,7 @@ const _htmlFile = [
     `!${_htmlSrcPath}/**/_*.html`
 ];
 
-
 gulp.task('default',['html:dev','js:dev','html:watch'])
-
 gulp.task('html:watch',function(){
     watch(_htmlFile,{events:['add', 'change']},(file)=>{})
     .pipe(fileinclude('@@'))
@@ -63,9 +61,8 @@ gulp.task('js:dev',function(){
             handle(file);
         }))
 })
-
 //发布环境
-gulp.task('build',['html:build','js:build'])
+gulp.task('build',['js:build'])
 gulp.task('js:build',function(){
     var _jsSrcPath = config.path.staticPath + 'js/*.js';
     gulp.src(_jsSrcPath)
@@ -76,4 +73,4 @@ gulp.task('js:build',function(){
         }))
         .pipe(webpack(webpackProConfig))
         .pipe(gulp.dest(_jsProOutPath))
-})
+});

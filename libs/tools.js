@@ -1,13 +1,14 @@
 //tools function
 var fs = require('fs');
 var path = require('path');
+var config = require('../config.js');
 var Tools= {};
 Tools.init_css = function(cssList){
     var _cssArr,_cssPath,_cssLinks='';
     var _cssMapObj = Tools.getMap('css');
     _cssArr = cssList.split(',');
     _cssPath = Tools.getStaticPath();
-    if(1 == 1){
+    if(config.env === 'www'){
         _cssArr.forEach(function(key) {
             key = 'css/' + key;
             _cssLinks += "<link href='//" + _cssPath + "/" + _cssMapObj[key] + "' rel='stylesheet' type='text/css' />";
@@ -25,7 +26,7 @@ Tools.init_js = function(jsList){
     var _jsMapObj = Tools.getMap('js');
     _jsArr = jsList.split(',');
     _jsPath = Tools.getStaticPath();
-    if(1 == 1){
+    if(config.env === 'www'){
         _jsArr.forEach(function(key) {
             key = 'js/' + key;
             if(key === 'js/zepto.js' || key === 'js/vue.min.js'){
