@@ -24,7 +24,7 @@ module.exports = {
                 loader: ExtractTextPlugin.extract('style','css!autoprefixer!less')
             },
             { test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192&name=img/[folder]/[name][hash:6].[ext]'},
-            { test: /\.(html|tpl)$/, loader: 'fuck-loader'},
+            { test: /\.(html|tpl)$/, loader: 'fuck-loader?static=localhost:3000/dist'},
         ]
     },
     babel: {

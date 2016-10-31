@@ -1,18 +1,17 @@
 {
   "img": {
-    "img/index/www375e67.jpg": "img/index/www375e67.jpg",
-    "img/common/4444375e67.jpg": "img/common/4444375e67.jpg"
+    "img/common/4444375e67.jpg": "img/common/4444375e67.jpg",
+    "img/index/www375e67.jpg": "img/index/www375e67.jpg"
   },
   "js": {
-    "js/demo.js": "js/demo.c29fc1.js",
-    "js/index.js": "js/index.33631d.js"
+    "js/demo.js": "js/demo.ebd98a.js",
+    "js/index.js": "js/index.be0e7d.js"
   },
   "css": {
-    "css/demo.css": "css/demo.c29fc1.css",
-    "css/index.css": "css/index.33631d.css"
+    "css/demo.css": "css/demo.ebd98a.css",
+    "css/index.css": "css/index.be0e7d.css"
   },
   "other": {
-    "foxue.html": "foxue.html",
     "index.html": "index.html"
   }
 }

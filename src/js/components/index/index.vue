@@ -4,12 +4,10 @@
             <navigation v-bind:data="data"></navigation>
             <list></list>
             <div>{{data.nav}}</div>
-            <img src={{pic}} />
-            <img src={{pic2}} />
+            <img src='../../../images/index/www.jpg' />
         </div>
 </template>
 <script>
-    var imgs = require('../../../images/index/www.jpg');
     var imgs2 = require('../../../images/common/4444.jpg');
     import topbanner from './topBanner';
     import list from './list';
@@ -31,7 +29,7 @@
             })
         },
         data(){
-            return {'data':'','pic':imgs,'pic2':imgs2};
+            return {'data':'','pic2':imgs2};
         },
         components:{
             topbanner,
