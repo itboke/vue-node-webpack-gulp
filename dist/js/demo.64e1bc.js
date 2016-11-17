@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist/";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -71,7 +71,7 @@
 /* 4 */
 /***/ function(module, exports) {
 
-	"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n\t<title></title>\r\n</head>\r\n<body>\r\n\t<h1>Strong Page</h1>\r\n</body>\r\n</html>"
+	"<!DOCTYPE html>\r\n<html>\r\n<head>\r\n\t<title></title>\r\n\t@@include('../_common/head.html')\r\n</head>\r\n<body>\r\n\t<h1>Strong Page</h1>\r\n</body>\r\n</html>\r\n"
 
 /***/ },
 /* 5 */

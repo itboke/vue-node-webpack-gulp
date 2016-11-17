@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist/";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -45,21 +45,21 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(85);
+	module.exports = __webpack_require__(86);
 
 
 /***/ },
 
-/***/ 85:
+/***/ 86:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	__webpack_require__(86);
-
 	__webpack_require__(87);
 
-	var _index = __webpack_require__(91);
+	__webpack_require__(88);
+
+	var _index = __webpack_require__(92);
 
 	var _index2 = _interopRequireDefault(_index);
 
@@ -78,30 +78,30 @@
 
 /***/ },
 
-/***/ 86:
+/***/ 87:
 /***/ function(module, exports) {
 
-	"<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    include('./_common/head.html')\r\n    css('index.css,dd.css')\r\n</head>\r\n<body>\r\n    <h1 id=\"app\"></h1>\r\n    js(\"zepto.js,vue.min.js,index.js,bbb.js\")\r\n    include('./_common/foot.html')\r\n</body>\r\n</html>\r\n"
+	"<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    @@include('./_common/head.html')\r\n    @@css('index.css')\r\n</head>\r\n<body>\r\n    <h1 id=\"app\"></h1>\r\n    @@js(\"zepto.js,vue.min.js,index.js\")\r\n    @@include('./_common/foot.html')\r\n</body>\r\n</html>\r\n"
 
 /***/ },
 
-/***/ 87:
+/***/ 88:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 91:
+/***/ 92:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(92)
+	__vue_script__ = __webpack_require__(93)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\index.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(102)
+	__vue_template__ = __webpack_require__(103)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -121,7 +121,7 @@
 
 /***/ },
 
-/***/ 92:
+/***/ 93:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -130,15 +130,15 @@
 	    value: true
 	});
 
-	var _topBanner = __webpack_require__(93);
+	var _topBanner = __webpack_require__(94);
 
 	var _topBanner2 = _interopRequireDefault(_topBanner);
 
-	var _list = __webpack_require__(95);
+	var _list = __webpack_require__(96);
 
 	var _list2 = _interopRequireDefault(_list);
 
-	var _navigation = __webpack_require__(98);
+	var _navigation = __webpack_require__(99);
 
 	var _navigation2 = _interopRequireDefault(_navigation);
 
@@ -154,7 +154,7 @@
 	//         </div>
 	// </template>
 	// <script>
-	var imgs2 = __webpack_require__(101);
+	var imgs2 = __webpack_require__(102);
 	exports.default = {
 	    el: '#app',
 	    ready: function ready() {
@@ -185,11 +185,11 @@
 
 /***/ },
 
-/***/ 93:
+/***/ 94:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_template__ = __webpack_require__(94)
+	__vue_template__ = __webpack_require__(95)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -209,23 +209,23 @@
 
 /***/ },
 
-/***/ 94:
+/***/ 95:
 /***/ function(module, exports) {
 
 	module.exports = "\n\n\n\n<div id=\"top_banner\" class=\"top-banner\">\n    <a href=\"/\">\n        <img src=\"http://wegraphics.net/wp-content/themes/wegraphics3/images/top-banner.jpg\" alt=\"\" />\n    </a>\n</div>\n";
 
 /***/ },
 
-/***/ 95:
+/***/ 96:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(96)
+	__vue_script__ = __webpack_require__(97)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\list.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(97)
+	__vue_template__ = __webpack_require__(98)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -245,7 +245,7 @@
 
 /***/ },
 
-/***/ 96:
+/***/ 97:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -276,23 +276,23 @@
 
 /***/ },
 
-/***/ 97:
+/***/ 98:
 /***/ function(module, exports) {
 
 	module.exports = "\n\n\n\n<div id=\"example-list\">\n    <ul>\n        <li v-for=\"item in items\">{{item.mes}}</li>\n    </ul>\n</div>\n";
 
 /***/ },
 
-/***/ 98:
+/***/ 99:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(99)
+	__vue_script__ = __webpack_require__(100)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\navigation.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(100)
+	__vue_template__ = __webpack_require__(101)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -312,7 +312,7 @@
 
 /***/ },
 
-/***/ 99:
+/***/ 100:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -345,28 +345,28 @@
 
 /***/ },
 
-/***/ 100:
+/***/ 101:
 /***/ function(module, exports) {
 
 	module.exports = "\n<div>\n    <header>\n        <div class=\"fixed-width\">\n            <div class=\"logo\"></div>\n            <div class=\"nav\">\n                <ul>\n                    <li v-for=\"item in data\"><a href=\"#\">{{item}}</a></li>\n                </ul>\n            </div>\n        </div>\n    </header>\n</div>\n";
 
 /***/ },
 
-/***/ 101:
+/***/ 102:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "img/common/4444375e67.jpg";
 
 /***/ },
 
-/***/ 102:
+/***/ 103:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src='" + __webpack_require__(103) + "' />\n</div>\n";
+	module.exports = "\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src='" + __webpack_require__(104) + "' />\n</div>\n";
 
 /***/ },
 
-/***/ 103:
+/***/ 104:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "img/index/www375e67.jpg";

@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist/";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -81,7 +81,7 @@
 /***/ 87:
 /***/ function(module, exports) {
 
-	"<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    @@include(\"./_common/head.html\")\r\n    css('index.css,dd.css')\r\n</head>\r\n<body>\r\n    <h1 id=\"app\"></h1>\r\n    js('zepto.js,vue.min.js,index.js')\r\n</body>\r\n</html>\r\n"
+	"<!DOCTYPE html><html lang=\"en\"><head> @@include('./_common/head.html') @@css('index.css')</head><body><h1 id=\"app\"></h1> @@js(\"zepto.js,vue.min.js,index.js\") @@include('./_common/foot.html')</body></html>"
 
 /***/ },
 
@@ -101,7 +101,7 @@
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\js\\components\\index\\index.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(104)
+	__vue_template__ = __webpack_require__(103)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -150,13 +150,11 @@
 	//             <navigation v-bind:data="data"></navigation>
 	//             <list></list>
 	//             <div>{{data.nav}}</div>
-	//             <img src={{pic}} />
-	//             <img src={{pic2}} />
+	//             <img src='../../../images/index/www.jpg' />
 	//         </div>
 	// </template>
 	// <script>
-	var imgs = __webpack_require__(102);
-	var imgs2 = __webpack_require__(103);
+	var imgs2 = __webpack_require__(102);
 	exports.default = {
 	    el: '#app',
 	    ready: function ready() {
@@ -174,7 +172,7 @@
 	        });
 	    },
 	    data: function data() {
-	        return { 'data': '', 'pic': imgs, 'pic2': imgs2 };
+	        return { 'data': '', 'pic2': imgs2 };
 	    },
 
 	    components: {
@@ -357,21 +355,21 @@
 /***/ 102:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "img/index/www375e67.jpg";
+	module.exports = __webpack_require__.p + "img/common/4444375e67.jpg";
 
 /***/ },
 
 /***/ 103:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "img/common/4444375e67.jpg";
+	module.exports = "\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src='" + __webpack_require__(104) + "' />\n</div>\n";
 
 /***/ },
 
 /***/ 104:
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "\n<div>\n    <topbanner></topbanner>\n    <navigation v-bind:data=\"data\"></navigation>\n    <list></list>\n    <div>{{data.nav}}</div>\n    <img src={{pic}} />\n    <img src={{pic2}} />\n</div>\n";
+	module.exports = __webpack_require__.p + "img/index/www375e67.jpg";
 
 /***/ }
 

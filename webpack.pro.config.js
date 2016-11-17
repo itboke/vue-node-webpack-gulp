@@ -2,29 +2,30 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var extractLESS = new ExtractTextPlugin('css/[name].[chunkhash:6].css');
-
 var MapPlugin = require('map-webpack-plugin');
 var mapPluginInstance = new MapPlugin({
     filename:'map.json',
     path: path.resolve(__dirname,'./dist/map')
 });
+var config = require('./config.js');
 module.exports = {
 
     output:{
         filename: 'js/[name].[chunkhash:6].js',
-        publicPath: '/dist/'
+        //path:__dirname + '/assets/',
+        //publicPath: 'http://127.0.0.1/dist'
     },
     module:{
         // 加载器
         loaders: [
-            { test: /\.vue$/, loader: 'vue' }, 
+            { test: /\.vue$/, loader: 'vue' },
             { test: /\.(js)$/, loader: 'babel', exclude: /node_modules/ },
             {
                 test: /\.less$/,
                 loader: ExtractTextPlugin.extract('style','css!autoprefixer!less')
             },
             { test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192&name=img/[folder]/[name][hash:6].[ext]'},
-            { test: /\.(html|tpl)$/, loader: 'lowhtml?static=localhost:3000/dist'},
+            { test: /\.(html)$/, loader: 'lowhtml?static=localhost:3000/dist&defautlStatic=dist'},
         ]
     },
     babel: {

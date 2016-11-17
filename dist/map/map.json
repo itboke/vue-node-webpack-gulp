@@ -4,14 +4,15 @@
     "img/index/www375e67.jpg": "img/index/www375e67.jpg"
   },
   "js": {
-    "js/demo.js": "js/demo.ebd98a.js",
-    "js/index.js": "js/index.be0e7d.js"
+    "js/demo.js": "js/demo.64e1bc.js",
+    "js/index.js": "js/index.255134.js"
   },
   "css": {
-    "css/demo.css": "css/demo.ebd98a.css",
-    "css/index.css": "css/index.be0e7d.css"
+    "css/demo.css": "css/demo.64e1bc.css",
+    "css/index.css": "css/index.255134.css"
   },
   "other": {
-    "index.html": "index.html"
+    "index.html": "index.html",
+    "foxue\\foxue.html": "foxue\\foxue.html"
   }
 }

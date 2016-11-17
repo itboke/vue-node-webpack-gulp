@@ -35,6 +35,7 @@
     "gulp-webpack": "^1.5.0",
     "html-loader": "^0.4.4",
     "img": "^3.0.3",
+    "internal": "^1.0.8",
     "koa": "^1.2.0",
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
@@ -48,6 +49,8 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "map-webpack-plugin": "^0.2.1"
+    "lowhtml-loader": "^2.1.3",
+    "map-webpack-plugin": "^0.2.1",
+    "vinyl-fs": "^2.4.4"
   }
 }
